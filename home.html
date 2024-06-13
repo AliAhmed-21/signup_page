@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+ <style>
+    .home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.username {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background-color: #3e8e41;
+}
+ </style>
+</head>
+<body>
+    
+  <div class="home-page">
+    <h2 class="username">Welcome, <span id="username"></span>!</h2>
+    <button class="logout-btn" id="logout-btn">Logout</button>
+  </div>
+  <script src="home.js"></script>
+</body>
+</html>
